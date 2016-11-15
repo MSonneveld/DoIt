@@ -10,7 +10,6 @@
 		2482100D1DD7C6E300CBF281 /* CompleteTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2482100C1DD7C6E300CBF281 /* CompleteTaskViewController.swift */; };
 		24E4C1EA1DD6048C00DD3EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E4C1E91DD6048C00DD3EF6 /* AppDelegate.swift */; };
 		24E4C1EC1DD6048C00DD3EF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E4C1EB1DD6048C00DD3EF6 /* ViewController.swift */; };
-		24E4C1F21DD6048C00DD3EF6 /* DoIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24E4C1F01DD6048C00DD3EF6 /* DoIt.xcdatamodeld */; };
 		24E4C1F41DD6048C00DD3EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E4C1F31DD6048C00DD3EF6 /* Assets.xcassets */; };
 		24E4C1F71DD6048C00DD3EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E4C1F51DD6048C00DD3EF6 /* LaunchScreen.storyboard */; };
 		24E4C1FF1DD604B800DD3EF6 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E4C1FE1DD604B800DD3EF6 /* TasksViewController.swift */; };
@@ -24,7 +23,6 @@
 		24E4C1E61DD6048C00DD3EF6 /* DoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E4C1E91DD6048C00DD3EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24E4C1EB1DD6048C00DD3EF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		24E4C1F11DD6048C00DD3EF6 /* DoIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoIt.xcdatamodel; sourceTree = "<group>"; };
 		24E4C1F31DD6048C00DD3EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24E4C1F61DD6048C00DD3EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24E4C1F81DD6048C00DD3EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				24E4C1F31DD6048C00DD3EF6 /* Assets.xcassets */,
 				24E4C1F51DD6048C00DD3EF6 /* LaunchScreen.storyboard */,
 				24E4C1F81DD6048C00DD3EF6 /* Info.plist */,
-				24E4C1F01DD6048C00DD3EF6 /* DoIt.xcdatamodeld */,
 			);
 			path = DoIt;
 			sourceTree = "<group>";
@@ -112,7 +109,7 @@
 					24E4C1E51DD6048C00DD3EF6 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = AF2W6X4E7K;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -152,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E4C1F21DD6048C00DD3EF6 /* DoIt.xcdatamodeld in Sources */,
 				24E4C1FF1DD604B800DD3EF6 /* TasksViewController.swift in Sources */,
 				24E4C1EC1DD6048C00DD3EF6 /* ViewController.swift in Sources */,
 				24E4C1EA1DD6048C00DD3EF6 /* AppDelegate.swift in Sources */,
@@ -275,15 +271,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AF2W6X4E7K;
-				INFOPLIST_FILE = DoIt/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mickey-Sonneveld.DoItApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "295b7dee-0ebd-406b-b7fa-f3d39f4d11f8";
-				PROVISIONING_PROFILE_SPECIFIER = DoIt;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -292,15 +288,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AF2W6X4E7K;
-				INFOPLIST_FILE = DoIt/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mickey-Sonneveld.DoItApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "295b7dee-0ebd-406b-b7fa-f3d39f4d11f8";
-				PROVISIONING_PROFILE_SPECIFIER = DoIt;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -327,19 +323,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		24E4C1F01DD6048C00DD3EF6 /* DoIt.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				24E4C1F11DD6048C00DD3EF6 /* DoIt.xcdatamodel */,
-			);
-			currentVersion = 24E4C1F11DD6048C00DD3EF6 /* DoIt.xcdatamodel */;
-			path = DoIt.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 24E4C1DE1DD6048C00DD3EF6 /* Project object */;
 }
